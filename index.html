@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>VK Messenger</title>
+    <meta name="description" content="VKontakte online messages app">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <style>
+        html {
+            box-sizing: border-box;
+            height: 100%;
+        }
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        [v-cloak] {display: none !important}
+
+        body {
+            background-color: #edeef0;
+            display: flex;
+            font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif;
+            line-height: 1.154;
+            font-weight: 400;
+            -webkit-font-smoothing: subpixel-antialiased;
+            -moz-osx-font-smoothing: auto;
+            min-height: 100%;
+        }
+
+        a {
+            color: #2a5885;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    </style>
+    <link rel="stylesheet" href="css/im.css">
+</head>
+<body>
+    <div id="app" v-cloak></div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+:root {
+	--vk-color: #4680C2;
+}
+
+.user-container {
+	position: relative;
+}
+.user-photo {
+	background-color: #fafbfc;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.user-photo img {
+	max-width: 100%;
+}
+.online:after {
+    content: '';
+    position: absolute;
+    background-color: #8ac176;
+	border-radius: 50%;
+	bottom: 5px;
+    right: 5px;
+    border: 2px solid #fff;
+    height: 12px;
+    width: 12px;
+}
+
+
+.dialog-info {
+	overflow: hidden;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner {
+    overflow: hidden;
+    width: 18px;
+    height: 18px;
+    z-index: 10;
+    margin: auto;
+    transform-origin: 100% 100%;
+    animation: rotate 1s linear infinite;
+}
+
+.spinner:before {
+    box-sizing: border-box;
+    display: block;
+    border: 1px solid #5a82ab;
+    border-radius: 100%;
+    width: 36px;
+    height: 36px;
+    content: ''
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
