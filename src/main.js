@@ -12,7 +12,9 @@ import store from './store';
 
 import './filters';
 
-var router = new VueRouter();
+var router = new VueRouter({
+    mode: 'history'
+});
 
 var app = new Vue({
     router,
