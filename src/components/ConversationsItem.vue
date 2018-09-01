@@ -49,16 +49,16 @@ export default {
 
             // Today
             if(time.isSame(moment(), 'day')) {
-                return time.format('hh:mm');
+                return time.format('H:mm');
             // Yesterday
             } else if( time.isSame(moment().subtract(1, 'day'), 'day') ) {
                 return time.format('вчера');
             // Current year
             } else if (time.isSame(moment(), 'year')) {
-                return time.format('D MMMM');
+                return time.format('D MMM');
             // All other
             } else {
-                return time.format('D MMMM YYYY');
+                return time.format('D MMM YYYY');
             }
         }
     }

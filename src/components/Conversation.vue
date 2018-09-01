@@ -14,10 +14,10 @@ export default {
             return moment(date).calendar(null, {
                 sameDay: 'Сегодня',
                 lastDay: 'Вчера',
-                lastWeek: 'd MMMM',
+                lastWeek: 'D MMMM',
                 sameElse: function (now) {
                     if (this.isSame(now, 'year')) {
-                        return 'd MMMM';
+                        return 'D MMMM';
                     } else {
                         return 'LL';
                     }
