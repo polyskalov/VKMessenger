@@ -11,7 +11,9 @@ export default {
     },
     methods: {
         getConversations: function () {
-            this.loading = true;
+            if (!this.conversations.length) {
+                this.loading = true;
+            }
 
             this.$http.jsonp('https://api.vk.com/method/messages.getConversations', {
                 params: {
@@ -33,6 +35,8 @@ export default {
                 response.body.response.groups.map(group => {
                     this.$store.commit('addGroup', group);
                 });
+            }).catch(error => {
+                setTimeout(this.getConversations, 5000);
             });
         }
     },
