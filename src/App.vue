@@ -1,6 +1,6 @@
 <script>
-import Conversations from './Conversations';
-import Conversation from './Conversation';
+import Conversations from './components/Conversations';
+import Conversation from './components/Conversation';
 
 export default {
     components: {
@@ -28,5 +28,18 @@ export default {
 	margin: 20px auto;
 	overflow: hidden;
 	max-width: 1000px;
+}
+
+@media only screen and (max-width: 768px) {
+    .conversations-page {
+        width: 100% !important;
+    }
+    .dialog-info {
+        display: none;
+    }
+    .im-container {
+        margin: 0;
+        height: 100vh;
+    }
 }
 </style>

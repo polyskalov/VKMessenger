@@ -5,7 +5,9 @@ import VueRouter from 'vue-router';
 Vue.use(VueResource);
 Vue.use(VueRouter);
 
-import App from './components/App';
+import "./assets/css/normalize.min.css";
+import "./assets/css/im.css";
+import App from './App';
 import Auth from './components/Auth';
 
 import store from './store';

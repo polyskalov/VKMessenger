@@ -52,13 +52,10 @@ export default {
 </template>
 
 <style scoped>
-    body {
-        background-image: url('../../img/vk-background.png');
-    }
-
     .vk-logo {
-        max-width: 150px;
+        max-width: 100px;
         align-self: center;
+        margin-bottom: 30px;
     }
     .login-form {
         display: flex;
