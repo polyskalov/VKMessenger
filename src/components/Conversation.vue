@@ -1,7 +1,7 @@
 <script>
 import Message from './Message';
 import MessageForm from './MessageForm';
-import _ from 'lodash';
+import groupBy from 'lodash/groupBy';
 import moment from 'moment';
 
 export default {
@@ -89,7 +89,7 @@ export default {
             });
         },
         _groupMessagesByDate(messages) {
-            return _.groupBy(messages, function (message) {
+            return groupBy(messages, function (message) {
                 return moment.unix(message.date).startOf('day').format();
             });
         }
